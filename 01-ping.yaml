@@ -3,5 +3,5 @@
   become: yes
   tasks:
   - name: pinging the server
-    ansible.builder.ping:
+    # ansible.builder.ping:
     ping:
