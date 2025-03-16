@@ -5,3 +5,7 @@
   - name: pinging the server
    # ansible.builtin.ping:
     ping:
+
+    # we can group the all IP Addresses here.
+# ansible -i inventory.ini web --list-hosts it will display IP's in WEB
+# ansible -i inventory.ini all --list-hosts it will display IP's in ALL
