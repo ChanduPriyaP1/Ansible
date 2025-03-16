@@ -1,7 +1,7 @@
 - name: ping the server
   hosts: all
   become: yes
-  tasks:
+  tasks: # list of tasks/modules/collections
   - name: pinging the server
-    # ansible.builder.ping:
+    # ansible.builtin.ping:
     ping:
