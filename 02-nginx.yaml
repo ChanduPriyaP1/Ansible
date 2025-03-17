@@ -11,3 +11,6 @@
       name: nginx
       state: started
       enabled: yes   
+
+#  cd /etc/nginx This is Nginx location we can see "nginx.conf" "nginx.conf.default" two files
+      
