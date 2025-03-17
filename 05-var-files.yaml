@@ -4,4 +4,5 @@
   - vars.yaml
   tasks:
   - name: Print Variable Values From Vars file
-    msg: "course: {{Course}} Trainer: {{Traine}} Duration: {{Duration}}"
+    debug:
+      msg: "course: {{Course}} Trainer: {{Traine}} Duration: {{Duration}}"
