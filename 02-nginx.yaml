@@ -1,0 +1,13 @@
+- name: Install and Run Nginx
+  hosts: all
+  become: yes
+  tasks:
+  - name: Here start nginx installation
+    dnf:
+      name: nginx
+      state: latest
+  - name: Start and Enable Nginx
+    service:
+      name: nginx
+      state: started
+      enabled: yes   
