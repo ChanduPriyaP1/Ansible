@@ -9,5 +9,5 @@
    # vars:
       #Hi: "I am from task level"
     debug:
-      msg: :"i am chandu priya i am taking {{ course }}  through {{ type }} tutor is {{ tutor }}. play Level vars"
+      msg: "i am chandu priya i am taking {{ course }}  through {{ type }} tutor is {{ tutor }}. play Level vars"
       #msg: "{{ Hi }}"
