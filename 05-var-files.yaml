@@ -5,4 +5,4 @@
   tasks:
   - name: Print Variable Values From Vars file
     debug:
-      msg: "course: {{Course}} Trainer: {{Traine}} Duration: {{Duration}}"
+      msg: "course: {{Course}} Trainer: {{Trainer}} Duration: {{Duration}}"
