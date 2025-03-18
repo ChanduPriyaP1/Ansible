@@ -1,0 +1,6 @@
+- name: Get Args from Run Time
+  hosts: localhost
+  tasks:
+  - name: Args Passing
+    debug:
+      msg: "Hi {{user}}, How Are you?"
