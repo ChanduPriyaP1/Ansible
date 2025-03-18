@@ -1,0 +1,10 @@
+- name: Shell  and command
+  hosts: localhost
+  tasks:
+  - name: list tmp files
+    command: ls /tmp
+
+  tasks:
+  - name: List `.log` files in /var/log
+    shell: "ls /var/log | grep '.log'"
+  
