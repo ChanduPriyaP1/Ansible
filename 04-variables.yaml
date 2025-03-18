@@ -9,11 +9,11 @@
     vars:
       Course: "JavaFullStack"
     debug:
-      msg: "i am chandu priya i am taking {{ course }}  through {{ type }} tutor is {{ tutor }}. Play Level vars"
+      msg: "i am chandu priya i am taking {{ Course }}  through {{ type }} tutor is {{ tutor }}. Play Level vars"
 
   - name: Print Variable    
     ansible.builtin.debug:
-      msg: "i am chandu priya i am taking {{ Course }}  through {{ type }} tutor is {{ tutor }}. Tasks Level vars"
+      msg: "i am chandu priya i am taking {{ course }}  through {{ type }} tutor is {{ tutor }}. Tasks Level vars"
 
 
 - name: variables
