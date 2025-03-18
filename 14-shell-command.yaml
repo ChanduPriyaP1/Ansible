@@ -4,8 +4,8 @@
    - name: list tmp files
      ansible.builtin.command: "echo 'Hi, this is from command module' > /tmp/command.txt "
 
-   - name: List `.log` files in /var/log
-     shell: "ls /var/log | grep '.log' > /tmp/demo.txt" 
+  #  - name: List `.log` files in /var/log
+  #    shell: "ls /var/log | grep '.log' > /tmp/demo.txt" 
   
 #  - name: command vs shell
 #    hosts: localhost
