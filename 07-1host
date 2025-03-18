@@ -1,0 +1,16 @@
+
+[db]
+54.159.229.75
+
+[localhost]
+localhost
+
+[localhost:vars]
+Course="DevOps"
+Trainer="SivaKumar"
+Duration="3.5 months"
+
+
+[all:children]
+db
+localhost
