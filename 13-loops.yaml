@@ -17,7 +17,7 @@
   tasks:
   - name: install Softwares
     dnf:
-      msg: "{{item}}"
+      name: "{{item}}"
       state: latest
     loop:
     - mysql
