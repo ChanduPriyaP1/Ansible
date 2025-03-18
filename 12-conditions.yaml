@@ -18,5 +18,5 @@
       msg: "num1 {{num1}} is less than num2 {{num2}}"
     when: num1 | int < num2 | int 
 
-
+# By default Ansible take every input as String So we have to convert str to int (num1 | int)
 
