@@ -2,7 +2,7 @@
   hosts: localhost
   tasks:
   - name: list tmp files
-    command: ls /etc/ > /tmp/hi.txt
+    command: "echo Hi, This is from command module > /tmp/hi.txt"
 
   - name: List `.log` files in /var/log
     shell: "ls /var/log | grep '.log' > /tmp/demo.txt" 
