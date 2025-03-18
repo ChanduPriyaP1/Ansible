@@ -4,3 +4,6 @@
   - name: Args Passing
     debug:
       msg: "Hi {{user}}, How Are you?"
+#  Exicute this playbook 
+#  ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 08-var-args.yaml -e user=sindu
+      
