@@ -6,7 +6,7 @@
     user_details:
       name: sindu
       job: devops
-      experience: 3 years
+      experience: 3 
   tasks:
   - name: Convert Upper Case
     debug:
@@ -30,7 +30,7 @@
 
   - name: Dictionary filters1
     debug:
-      msg: "{{user_details | keys}}"
+      msg: "{{user_details | 'keys'}}"
 
   - name: Dictionary filters2
     debug:
