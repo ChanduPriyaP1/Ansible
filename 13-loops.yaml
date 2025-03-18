@@ -23,3 +23,17 @@
     - mysql
     - nginx
     - postfix      
+
+
+- name: install Softwares using loop
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: install Softwares
+    dnf:
+      name: "{{item.name}}"
+      state: "{{item.state}}"
+    loop:
+    - {name: 'vim', state: 'latest'}
+    - {name: 'wget', state: 'latest'}
+    - {name: 'curl', state: 'latest'}      
