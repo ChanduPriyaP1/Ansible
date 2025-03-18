@@ -3,7 +3,7 @@
   become: yes
   tasks:
   - name: check user exist or not
-    ansible.builtin.command: id expense
+    ansible.builtin.command: id expense #if user exist rc value is 0 other wise 1 
     register: USER
     ignore_errors: true
   - name: print User informatin
@@ -11,7 +11,7 @@
       msg: "User information is: {{USER}}"  
   - name: User Creation
     ansible.builtin.command: useradd expense
-    when: USER.rc !=0     
+    when: USER.rc !=0     # here rc=0 means user existed rc=1 means User not Existed
   - name: say hello
     debug:
       msg: "Hello"
