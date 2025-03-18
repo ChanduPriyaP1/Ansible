@@ -28,9 +28,9 @@
     debug:
       msg: "{{fruts | sort}}"      
 
-  - name: Dictionary filters1
-    debug:
-      msg: "{{user_details | 'keys'}}"
+  # - name: Dictionary filters1
+  #   debug:
+  #     msg: "{{user_details | keys}}"
 
   - name: Dictionary filters2
     debug:
