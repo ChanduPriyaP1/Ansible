@@ -7,13 +7,13 @@
   tasks:
   - name: To Print the Variables
     vars:
-      Hi: "I am from task level"
+      hi: "I am from task level"
     debug:
       msg: "i am chandu priya i am taking {{ course }}  through {{ type }} tutor is {{ tutor }}. play Level vars"
 
   - name: Print Variable    
     debug:
-      msg: "{{ Hi }}"
+      msg: "{{ hi }}"
 
 - name: variables
   hosts: localhost
