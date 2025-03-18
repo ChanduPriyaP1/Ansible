@@ -36,6 +36,8 @@
     debug:
       msg: "{{user_details | dict2items}}" 
 
+  # If your Ansible version is below 2.8, update the syntax like this:  user_details.keys()   
+
   - name: Print Keys From dictionary
     debug:
       msg: "{{ user_details.keys() }}"             
