@@ -10,3 +10,16 @@
     - priya
     - kumar
     - chandu    
+
+- name: install Softwares using loop
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: install Softwares
+    debug:
+      msg: "{{item}}"
+      state: latest
+    loop:
+    - mysql
+    - nginx
+    - postfix      
