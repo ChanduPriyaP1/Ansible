@@ -1,3 +1,20 @@
+- name: Play level Variables
+  hosts: localhost
+  vars:
+    course: "Devops"
+    tutor: "Siva"
+    type: "online"
+  tasks:
+  - name: To Print the Variables
+    vars:
+      Hi: "I am from task level"
+    debug:
+      msg: "i am chandu priya i am taking {{ course }}  through {{ type }} tutor is {{ tutor }}. play Level vars"
+      
+  - name: Print Task Variable    
+    debug:
+      msg: "{{ Hi }}"
+
 - name: variables
   hosts: localhost
   vars: #variable declaration
