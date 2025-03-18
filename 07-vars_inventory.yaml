@@ -1,19 +1,20 @@
-# - name: Variables from inventory
-#   hosts: localhost
-#   tasks:
-#   - name: print info
-#     ansible.builtin.debug:
-#       msg: "Hi, all course: {{Course}} Trainer: {{Trainer}} Duration: {{Duration}}"
-
-
-- name: variables from inventory
+- name: Variables from inventory
   hosts: localhost
   tasks:
-  - name: print information
-    vars:
-      timings: "07:15AM IST"
+  - name: print info
     ansible.builtin.debug:
-      msg: "Hi, We are learning{{Course}} from Trainer {{Trainer}}, Duration is {{Duration}}. Timings are: {{timings}}"
+      msg: "Hi, all course: {{Course}} Trainer: {{Trainer}} Duration: {{Duration}}"
+
+#  ansible-playbook -i 07-1host -e ansible_user=ec2-user -e ansible_password=DevOps321 07-vars_inventory.yaml 
+
+# - name: variables from inventory
+#   hosts: localhost
+#   tasks:
+#   - name: print information
+#     vars:
+#       timings: "07:15AM IST"
+#     ansible.builtin.debug:
+#       msg: "Hi, We are learning{{Course}} from Trainer {{Trainer}}, Duration is {{Duration}}. Timings are: {{timings}}"
 
 
       #Course: "DevOps"
