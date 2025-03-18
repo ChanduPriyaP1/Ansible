@@ -2,8 +2,8 @@
   hosts: localhost
   tasks:
   - name: list tmp files
-    command: ls /tmp > /tmp/hi.txt
-    
+    command: ls /etc/ > /tmp/hi.txt
+
   - name: List `.log` files in /var/log
     shell: "ls /var/log | grep '.log' > /tmp/demo.txt" 
   
