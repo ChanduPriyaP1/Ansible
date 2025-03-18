@@ -16,7 +16,7 @@
   become: yes
   tasks:
   - name: install Softwares
-    debug:
+    dnf:
       msg: "{{item}}"
       state: latest
     loop:
