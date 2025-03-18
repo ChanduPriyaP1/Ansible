@@ -1,0 +1,13 @@
+- name: Take Vars Value from keyboard
+  hosts: localhost
+  vars-prompt:
+  - name: USERNAME
+    prompt: "Enter Usernsme:"
+    private: false
+  - name: PASSWORD
+    prompt: "Please Enter Password: "
+    private: true
+  tasks:
+  - name: Print Info
+    debug:
+      msg: "Usernsme: {{USERNAME}} and password: {{PASSWORD}}"
