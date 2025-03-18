@@ -28,10 +28,10 @@
     debug:
       msg: "{{fruts | sort}}"      
 
-  # - name: Dictionary filters1
-  #   debug:
-  #     msg: "{{user_details | keys}}"
-
-  - name: Dictionary filters2
+  - name: Before Convert 
     debug:
-      msg: "{{user_details | values}}"         
+      msg: "{{user_details}}"
+
+  - name: After convert
+    debug:
+      msg: "{{user_details | dict2item}}"         
