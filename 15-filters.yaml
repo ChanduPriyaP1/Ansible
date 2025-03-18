@@ -38,4 +38,4 @@
 
   - name: After convert
     debug:
-      msg: "{{user_details | keys }}"             
+      msg: "{{ user_details.keys() }}"             
