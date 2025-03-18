@@ -1,15 +1,16 @@
-- name: Play level Variables
+- name: variables
   hosts: localhost
-  vars:
-    course: "Devops"
-    tutor: "Siva"
-    type: "online"
+  vars: #variable declaration
+    Course: "Terraform"
+    Trainer: "Siva"
+    Duration: "15hrs"
   tasks:
-  - name: To Print the Variables
-    vars:
-      Hi: "I am from task level"
-    debug:
-      msg: "i am chandu priya i am taking {{ course }}  through {{ type }} tutor is {{ tutor }}. play Level vars"
-  - name: Print Task Variable    
-    debug:
-      msg: "{{ Hi }}"
+  - name: print override information
+    vars: # Task level variables
+      Course: "DevOps"
+    ansible.builtin.debug:
+      msg: "Hi, We are learning {{Course}} from Trainer {{Trainer}}, Duration is {{Duration}}."
+
+  - name: print information
+    ansible.builtin.debug:
+      msg: "Hi, We are learning {{Course}} from Trainer {{Trainer}}, Duration is {{Duration}}."
