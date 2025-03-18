@@ -1,7 +1,7 @@
 - name: variables from var file
   hosts: localhost
   vars_files:
-  - vars.yaml
+  - 05-1vars.yaml
   tasks:
   - name: Print Variable Values From Vars file
     debug:
