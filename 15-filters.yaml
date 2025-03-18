@@ -36,6 +36,10 @@
     debug:
       msg: "{{user_details | dict2items}}" 
 
-  - name: After convert
+  - name: Print Keys From dictionary
     debug:
       msg: "{{ user_details.keys() }}"             
+
+  - name: Print Values From dictionary
+    debug:
+      msg: "{{ user_details.values() }}"    
