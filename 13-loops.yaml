@@ -4,7 +4,7 @@
   - name: Print loop
     debug:
       msg: " {{item}}"
-  - loop:
+    loop:
     - sindu
     - siva
     - priya
