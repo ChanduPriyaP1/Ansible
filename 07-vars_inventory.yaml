@@ -7,7 +7,7 @@
 
 
 - name: variables from inventory
-  hosts: db
+  hosts: webservers
   tasks:
   - name: print information
     vars:
