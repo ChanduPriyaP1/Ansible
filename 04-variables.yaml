@@ -12,7 +12,7 @@
       msg: "i am chandu priya i am taking {{ course }}  through {{ type }} tutor is {{ tutor }}. Play Level vars"
 
   - name: Print Variable    
-    debug:
+    ansible.builtin.debug:
       msg: "i am chandu priya i am taking {{ Course }}  through {{ type }} tutor is {{ tutor }}. Tasks Level vars"
 
 
