@@ -2,12 +2,36 @@
   hosts: localhost
   vars:
     String: Hello Ansible 
+    fruts: ['apple','bunana','apple','pinaple']
+    user_details:
+      name: sindu
+      job: devops
+      experience: 3 years
   tasks:
   - name: Convert Upper Case
-    msg: "{{String | upper}}"  
+    debug:
+      msg: "{{String | upper}}"  
 
   - name: Convert Lower Case
-    msg: "{{String | lower}}"
+    debug:
+      msg: "{{String | lower}}"
 
   - name: replace a word
-    msg: "{{String | replace('Ansible','world')}}"    
+    debug:
+      msg: "{{String | replace('Ansible','world')}}" 
+
+  - name: print uniq from list
+    debug:
+      msg: "{{fruts | unique}}"   
+
+  - name: Sort the List
+    debug:
+      msg: "{{fruts | sort}}"      
+
+  - name: Dictionary filters1
+    debug:
+      msg: "{{user_details | keys}}"
+
+  - name: Dictionary filters2
+    debug:
+      msg: "{{user_details | values}}"         
