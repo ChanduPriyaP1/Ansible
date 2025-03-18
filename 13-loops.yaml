@@ -1,0 +1,12 @@
+- name: loops Demo
+  hosts: localhost
+  tasks:
+  - name: Print loop
+    debug:
+      msg: " {{item}}"
+  - loop:
+    - sindu
+    - siva
+    - priya
+    - kumar
+    - chandu    
