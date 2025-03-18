@@ -1,0 +1,13 @@
+- name: Filters different Demos
+  hosts: localhost
+  vars:
+    String: Hello Ansible 
+  tasks:
+  - name: Convert Upper Case
+    msg: "{{String | upper}}"  
+
+  - name: Convert Lower Case
+    msg: "{{String | lower}}"
+
+  - name: replace a word
+    msg: "{{String | replace('Ansible','world')}}"    
