@@ -34,4 +34,4 @@
 
   - name: After convert
     debug:
-      msg: "{{user_details | dict2item}}"         
+      msg: "{{user_details | dict2items}}"         
