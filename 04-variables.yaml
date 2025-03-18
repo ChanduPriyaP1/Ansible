@@ -7,13 +7,14 @@
   tasks:
   - name: To Print the Variables
     vars:
-      hi: "I am from task level"
+      Course: "JavaFullStack"
     debug:
-      msg: "i am chandu priya i am taking {{ course }}  through {{ type }} tutor is {{ tutor }}. play Level vars"
+      msg: "i am chandu priya i am taking {{ course }}  through {{ type }} tutor is {{ tutor }}. Play Level vars"
 
   - name: Print Variable    
     debug:
-      msg: "{{ hi }}"
+      msg: "i am chandu priya i am taking {{ Course }}  through {{ type }} tutor is {{ tutor }}. Tasks Level vars"
+
 
 - name: variables
   hosts: localhost
