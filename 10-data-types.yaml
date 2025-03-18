@@ -1,0 +1,17 @@
+- name: data types
+  hosts: localhost
+  vars:
+    Course: "Oracle"
+    list:
+      - tables
+      - databases
+      - schemas
+    Experience:
+      aws: 3
+      Docker: 2
+      Terraform: 1
+    RealProject: true  
+  tasks:
+  - name: print variables
+    debug:
+      msg: " The Course is: {{Course}}, Details is: {{list}} and Experiences :{{Experience}} is RealProject:{{RealProject}}"  

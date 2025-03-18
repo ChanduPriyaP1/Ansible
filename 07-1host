@@ -9,6 +9,7 @@ localhost
 Course="DevOps"
 Trainer="SivaKumar"
 Duration="3.5 months"
+WISHES="Morning from inventory"
 
 
 [all:children]
